@@ -1,13 +1,21 @@
 require 'sinatra'
 require 'rubygems'
-require_relative ''
 
-get '/' do
-	erb :
+class HangManApp <Sinatra::Base
 
-end
+	get '/' do
+		"Hello World"
+	end
 
-post '/player' do
+	# get '/' do
+	# 	erb :players
 
-	
+	# end
+
+	# post '/player' do
+	# 	player = params[:player]
+
+
+	# end
+
 end
