@@ -25,9 +25,13 @@ class HangManApp <Sinatra::Base
 		backend_player1 = params[:p1_name_input]
 		backend_player2 = params[:p2_name_input]
 		backend_secret = params[:secret_word]
-
+		secret_word = Secret_word.new(backend_secret)
 		# "player 1 is #{backend_player1} and player 2 name is #{backend_player2} and the word is #{backend_secret}"
 		erb :next_file, 
+	end
+
+	post '/game' do
+		
 	end
 
 end
