@@ -25,7 +25,7 @@ class Secret_word
 		end	
 	end
 
-	def input_validation
+	def input_validation(bad)
 		if secret_word.match(/[^A-Za-z]/) 
 			false
 		else
