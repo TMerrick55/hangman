@@ -16,8 +16,8 @@ class HangMan <Minitest::Test
 
 	def test_1_is_invalid_input
 		secret_word = Secret_word.new('rouge')
-		secret_word.match_letters('1')
-		assert_equal(false, secret_word.input_validation)
+		secret_word.input_validation('1')
+		assert_equal(false, secret_word.input_validation(bad))
 	end
 
 end
