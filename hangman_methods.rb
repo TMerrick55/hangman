@@ -10,7 +10,7 @@ class Secret_word
 	end
 
 	def array_length
-		Array.new(secret_word.length, '_')
+		Array.new(secret_word.length, '_ ')
 	end
 
 	def match_letters(letter_guess)
