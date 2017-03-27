@@ -1,5 +1,6 @@
-<h2><%=player2%> guess a letter</h2>
+<meta charset="UTF-8">
 
+<h2><%=player2%> guess a letter</h2>
 <form method = 'post' action = 'next_file'>
 <input type = 'text' name = 'letter_input'>
 <input type = 'hidden' name = 'p2_name_input' value = '<%=player2%>'>
@@ -9,3 +10,9 @@
 </form>
 
 <%=container%>
+
+<p>Guessed letters: <%=guess_letter%></p>
+
+<p> You have <%=wrong_count%> wrong guesses</p>
+
+<p><%=message%></p>
